@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Uni_Item IO Framework webuni" steamworkshopid="2950383008" corepackage="false" modversion="1.0.00" gameversion="1.1.19.3" installtime="1698856146" >
+  <Item file="%ModDir%/XML/ItemBox.xml" />
+  <Text file="%ModDir%/XML/Text/English.xml" />
+  <Text file="%ModDir%/XML/Text/SimplifiedChinese.xml" />
+</contentpackage>

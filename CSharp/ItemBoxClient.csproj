@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;CS0122</NoWarn>
+    <DefineConstants>$(DefineConstants)TRACE;CLIENT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NoWarn>1701;1702;CS0122</NoWarn>
+    <DefineConstants>$(DefineConstants)TRACE;CLIENT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;CS0122</NoWarn>
+    <DefineConstants>$(DefineConstants)TRACE;CLIENT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NoWarn>1701;1702;CS0122</NoWarn>
+    <DefineConstants>$(DefineConstants)TRACE;CLIENT</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Refs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Barotrauma">
+      <HintPath>..\Refs\Client\Barotrauma.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Windows.NetStandard">
+      <HintPath>..\Refs\MonoGame.Framework.Windows.NetStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="XNATypes">
+      <HintPath>..\Refs\XNATypes.dll</HintPath>
+    </Reference>
+	<Compile Remove="./Server/*.cs" />
+  </ItemGroup>
+
+</Project>
