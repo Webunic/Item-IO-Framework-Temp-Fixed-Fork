@@ -9,6 +9,6 @@
   <Sprite texture="Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" depth="0.6" />
   <Body width="90" height="60" density="20" />
   <ItemContainer capacity="1" AllowSwappingContainedItems="false" />
-  <ConditionStorage maxItemCount="1024" slotIndex="0" iconScale="0.6" iconShiftX="0" iconShiftY="0.1" />
+  <ConditionStorage maxItemCount="10240" slotIndex="0" iconScale="0.6" iconShiftX="0" iconShiftY="0.1" />
   <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
 </Item>
